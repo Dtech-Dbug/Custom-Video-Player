@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header style="background-color: crimson; color: white;">
+        <h1>Custom Video Player</h1>
+        <h2>Made with HTML , CSS , JS</h2>
+    </header>
+
+ <div class="player">
+    <video class="player__video viewer" controls  src="/Pexels Videos 1795797.mp4 "></video>
+
+    <div class="player__controls">
+        <div class="progress">
+            <div class="progress__filled"></div>
+        </div>
+        <button style="outline: none; background-color: black;" class="player__button toggle" title="toggle"> ▶️</button>
+ 
+
+
+        <label style="border: 2px solid black;" for="Volume">Volume</label>
+        <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+        <label style="border: 2px solid black;" for="Volume">Playback-Speed</label>
+        <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+
+        <button style="background-color: black; color: white;" data-skip="-10" class="player__button"> <<-10s </button>
+
+        <button style="background-color: black; color: white;" data-skip="25" class="player__button"> 25s>></button>
+    </div>
+ </div>
+
+
+
+ <script src="/app.js"></script>
+    
+</body>
+
+<style>
+
+
+    body{
+        border:  9px solid crimson;
+        text-align: center;
+        margin: 9rem 9rem;
+        background-image: url(/joshua-coleman-iNrBHgUBDSg-unsplash.jpg);
+        background-size: 100% 200%;
+        box-shadow: 3px 9px 9px black;
+        padding: 0.3rem 0.3rem;
+        
+        
+    }
+    video{
+        width: 100%;
+    }
+</style>
+</html>
